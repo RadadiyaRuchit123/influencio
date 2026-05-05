@@ -12,6 +12,7 @@
     justify-content: center;
     padding: 80px 20px;
     position: relative;
+    padding-bottom: 0;
 }
 
 .privacy-hero::after {
@@ -27,7 +28,7 @@
 .privacy-hero-container {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1140px;
     width: 100%;
 }
 
@@ -50,9 +51,8 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 6px 16px;
-    background: #f4f3ec;
-    border: 1px solid rgba(0,0,0,0.1);
+    padding: 5px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 100px;
     font-weight: 600;
     font-size: 14px;
@@ -71,13 +71,13 @@
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 24px;
-    color: #1a1a1a;
+    color: #000;
 }
 
 .privacy-intro {
     font-size: 18px;
     line-height: 1.6;
-    color: #666;
+    color: #000;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -92,13 +92,13 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 16px;
-    color: #1a1a1a;
+    color: #000;
 }
 
 .privacy-section p {
     font-size: 16px;
     line-height: 1.8;
-    color: #444;
+    color: #000;
 }
 
 .privacy-section ul {
@@ -110,8 +110,8 @@
 .privacy-section li {
     font-size: 16px;
     line-height: 1.8;
-    color: #444;
-    margin-bottom: 8px;
+    color: #000;
+    margin-bottom: 4px;
 }
 
 .contact-email {
@@ -119,15 +119,13 @@
     font-weight: 600;
 }
 
-.contact-email span {
-    color: var(--accent);
-}
+
 
 @media (max-width: 768px) {
     .privacy-main-title {
         font-size: 36px;
     }
-    
+
     .privacy-hero h1 {
         font-size: 40px !important;
         line-height: 1.2 !important;
