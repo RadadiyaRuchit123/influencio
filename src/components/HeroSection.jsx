@@ -1,12 +1,13 @@
 import React from 'react';
 import AnimatedHeading from './AnimatedHeading';
+import heroBg from '../assets/hero-bg.png';
 
 export default function HeroSection() {
     return (
         <section className="hero">
             <div className="hero-bg-container">
                 <img 
-                    src="/src/assets/hero-bg.png" 
+                    src={heroBg} 
                     alt="" 
                     className="hero-bg-img" 
                     fetchpriority="high"
