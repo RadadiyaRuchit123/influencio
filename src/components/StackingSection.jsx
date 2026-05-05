@@ -44,9 +44,9 @@ const StackingSection = () => {
             <div
               key={card.id}
               className="stacking-card"
-              style={{ top: '100px' }}
+              style={{ top: '100px', zIndex: index + 1 }}
             >
-              <div className="card-inner bg-[#fff4f4] gap-[15px] pb-[20px]">
+              <div className="card-inner">
                 <div className="card-image-side rounded-[10px]">
                   <img src={card.img} alt={card.title} />
                   <div className="card-play-btn">

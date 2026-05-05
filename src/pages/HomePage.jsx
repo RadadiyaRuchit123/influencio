@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
-    <div className="home-page max-w-full overflow-hidden">
+    <div className="home-page max-w-full" style={{ overflowX: 'clip' }}>
       <Navbar />
       <HeroSection />
       <SocialSection />
