@@ -38,7 +38,7 @@ const BlogSection = () => {
           {posts.map((post) => (
             <div key={post.id} className="blog-card gap-3.5">
               <div className="blog-image-wrapper rounded-[10px] w-full aspect-16/10 overflow-hidden relative ">
-                <img src={post.image} alt={post.title} />
+                <img src={post.image} alt={post.title} loading="lazy" decoding="async" />
               </div>
               <div className="blog-date text-lg color-[#000]">{post.date}</div>
               <h3 className="blog-card-title">{post.title}</h3>

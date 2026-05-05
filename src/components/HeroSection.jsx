@@ -4,6 +4,14 @@ import AnimatedHeading from './AnimatedHeading';
 export default function HeroSection() {
     return (
         <section className="hero">
+            <div className="hero-bg-container">
+                <img 
+                    src="/src/assets/hero-bg.png" 
+                    alt="" 
+                    className="hero-bg-img" 
+                    fetchpriority="high"
+                />
+            </div>
             <div className="hero-content">
                 <AnimatedHeading
                     tag="h1"

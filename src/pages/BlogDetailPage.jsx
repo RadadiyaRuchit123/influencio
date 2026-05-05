@@ -61,7 +61,7 @@ const BlogDetailPage = () => {
 
         {/* Hero Image */}
         <div className="blog-detail-hero">
-          <img src={post.img} alt={post.title} className="rounded-[20px] w-full aspect-19/10 object-cover" />
+          <img src={post.img} alt={post.title} className="rounded-[20px] w-full aspect-19/10 object-cover" loading="lazy" decoding="async" />
         </div>
 
         {/* Article Body */}

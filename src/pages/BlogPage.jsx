@@ -39,7 +39,7 @@ const BlogPage = () => {
                         {blogPosts.map(post => (
                             <Link to={`/blog/${post.id}`} key={post.id} className="blog-item-minimal" style={{ textDecoration: 'none' }}>
                                 <div className="blog-img-wrapper">
-                                    <img src={post.img} alt={post.title} />
+                                    <img src={post.img} alt={post.title} loading="lazy" decoding="async" />
                                     <div className="blog-arrow-overlay">
                                         <div className="arrow-circle">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">

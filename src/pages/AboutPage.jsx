@@ -52,7 +52,7 @@ const AboutPage = () => {
 
       <section className="about-video-main">
         <div className="video-hero-wrapper">
-          <img src="/about_hero.png" alt="Main Feature" className="video-hero-thumb" />
+          <img src="/about_hero.png" alt="Main Feature" className="video-hero-thumb" loading="lazy" decoding="async" />
           <div className="play-overlay-large">
             <div className="play-circle">
               <svg width="40" height="46" viewBox="0 0 40 46" fill="none">
@@ -83,7 +83,7 @@ const AboutPage = () => {
             {displayVideos.map((video, index) => (
               <div key={index} className="marquee-video-slide">
                 <div className="about-video-card">
-                  <img src={video.img} alt={video.title} />
+                  <img src={video.img} alt={video.title} loading="lazy" decoding="async" />
                   <div className="play-mini">
                     <svg width="24" height="28" viewBox="0 0 40 46" fill="none">
                       <path d="M37 19.5359C40.3333 21.4604 40.3333 26.2729 37 28.1974L7.75 45.085C4.41666 47.0095 -1.18204e-06 44.6032 -1.01379e-06 40.7543L4.62933e-07 6.97902C6.31179e-07 3.13013 4.41667 0.723877 7.75 2.64838L37 19.5359Z" fill="white" />
