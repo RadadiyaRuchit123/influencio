@@ -21,10 +21,16 @@ function Navbar() {
                     <Link to="/about" className="nav-link">
                         <span data-text="About">About</span>
                     </Link>
-                    <a href="#" className="nav-link">
-                        <span data-text="Page">Page</span>
+                    <div className="nav-link dropdown">
+                        <span data-text="Pages">Pages</span>
                         <ChevronDownIcon size={14} />
-                    </a>
+                        <div className="dropdown-menu">
+                            <Link to="/about" className="dropdown-item">About Us</Link>
+                            <Link to="/blog/1" className="dropdown-item">Blog Details</Link>
+                            <Link to="/privacy" className="dropdown-item">Privacy Policy</Link>
+                            <Link to="/404" className="dropdown-item">404 Error</Link>
+                        </div>
+                    </div>
                     <Link to="/blog" className="nav-link">
                         <span data-text="Blog">Blog</span>
                     </Link>
