@@ -1,0 +1,179 @@
+.stacking-container {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+
+.stacking-sidebar {
+  top: 100px;
+  flex-shrink: 0;
+}
+
+.stacking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.stacking-badge .dot {
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.stacking-main-title {
+  font-size: 52px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  max-width: 37%;
+}
+
+.stacking-cards {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.stacking-card {
+  position: sticky;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.card-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 380px;
+}
+
+.card-image-side {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.stacking-card:hover .card-image-side img {
+  transform: scale(1.05);
+}
+
+.card-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.card-play-btn svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+.card-text-side {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-title-area h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 15px 0;
+  max-width: 200px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.card-text-side p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* Stacking effect adjustments */
+.stacking-card:nth-child(1) {
+  transform: translateY(0);
+}
+
+.stacking-card:nth-child(2) {
+  z-index: 2;
+}
+
+.stacking-card:nth-child(3) {
+  z-index: 3;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .stacking-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .stacking-sidebar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .stacking-main-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-inner {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .card-image-side {
+    height: 300px;
+  }
+
+  .card-text-side {
+    padding: 30px;
+  }
+}
