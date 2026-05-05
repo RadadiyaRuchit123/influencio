@@ -1,5 +1,6 @@
 import React from 'react';
 import './StackingSection.css';
+import './StackingSection.css';
 import AnimatedHeading from './AnimatedHeading.jsx';
 
 const StackingSection = () => {
@@ -34,11 +35,11 @@ const StackingSection = () => {
           </div>
           <AnimatedHeading
             text="The Smart Way To Collaborate"
-            className="stacking-main-title font-extrabold text-[74px] leading-[82px] tracking-[-0.04em] text-[#1a1a1a] flex flex-wrap justify-start gap-x-[0.3em] max-w-4/5"
+            className="stacking-main-title font-extrabold text-[74px] leading-[82px] tracking-[-0.04em] text-[#1a1a1a] flex flex-wrap justify-start gap-x-[0.3em] max-w-full lg:max-w-4/5 "
           />
         </div>
 
-        <div className="stacking-cards max-w-3/4 ml-auto">
+        <div className="stacking-cards max-w-full lg:max-w-3/4 ml-auto">
           {cards.map((card, index) => (
             <div
               key={card.id}

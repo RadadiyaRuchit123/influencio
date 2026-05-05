@@ -53,7 +53,7 @@ const FeaturedSection = () => {
 
   return (
     <section className="featured-section width-[100%] flex flex-col items-center px-[20px] py-[60px] bg-[#fff4f4]" ref={sectionRef}>
-      <div className="featured-header pb-[60px] text-center flex flex-col justify-center items-center max-w-[30%]">
+      <div className="featured-header pb-[60px] text-center flex flex-col justify-center items-center max-w-full  md:max-w-[70%] lg:max-w-[30%]">
         <div className="featured-badge px-[12px] py-[4px] border border-[rgba(0,0,0,0.3)] gap-[10px] rounded-[100px] inline-flex items-center font-size-[14px] font-weight-[600] text-[#1a1a1a] margin-bottom-[24px] max-w-fit">
           <span className="dot bg-[#000] w-[5px] h-[5px] rounded-[50%]"></span>
           Glow and Glamour
