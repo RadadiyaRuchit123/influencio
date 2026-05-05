@@ -34,8 +34,8 @@ const AboutPage = () => {
       <section className="about-bio-section bg-[#fff4f4] py-[120px] px-[20px] max-w-[1140px] m-auto">
         <div className="bio-container grid grid-cols-[0.3fr_0.7fr] gap-[40px]">
           <div className="bio-left">
-            <div className="about-badge bg-transparent max-w-fit border border-[rgba(0,0,0,0.1)]">
-              <span className="dot"></span>
+            <div className="about-badge flex items-center gap-2 bg-transparent max-w-fit border border-black/10 rounded-full px-4 py-1.5 font-semibold text-sm">
+              <span className="dot w-1.5 h-1.5 bg-black rounded-full"></span>
               About Us
             </div>
           </div>
@@ -68,8 +68,8 @@ const AboutPage = () => {
       {/* Full-Width Auto-Scrolling Video Section */}
       <section className="about-videos-marquee-section pb-[120px] relative w-full overflow-hidden bg-[#fff4f4]">
         <div className="videos-marquee-header mb-16 max-w-[40%] m-auto">
-          <div className="about-badge mb-4 mx-auto max-w-fit">
-            <span className="dot"></span>
+          <div className="about-badge flex items-center gap-2 mx-auto max-w-fit border border-black/10 rounded-full px-4 py-1.5 font-semibold text-sm">
+            <span className="dot w-1.5 h-1.5 bg-black rounded-full"></span>
             Videos
           </div>
           <AnimatedHeading
