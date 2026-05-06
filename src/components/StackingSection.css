@@ -51,7 +51,6 @@
 .stacking-card {
   position: sticky;
   width: 100%;
-  background: white;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.4s ease;
